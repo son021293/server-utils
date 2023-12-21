@@ -1,5 +1,5 @@
 {
-  "name": "server-utils",
+  "name": "find-server-utils",
   "version": "1.0.0",
   "description": "Find server with lowest priority",
   "main": "index.ts",

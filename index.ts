@@ -1,6 +1,6 @@
-export type TInputUrl = { url: string, priority: number };
+type TInputUrl = { url: string, priority: number };
 
-export const findServer = async (data: TInputUrl[]) => {
+const findServer = async (data: TInputUrl[]) => {
   const validServer: TInputUrl[] = [];
   await Promise.all(data.map(async (item) => {
     try {
@@ -17,29 +17,8 @@ export const findServer = async (data: TInputUrl[]) => {
   return Promise.resolve(sortedServersLowestPriority[0]);
 }
 
-(async () => {
-  await findServer([
-      {
-        "url": "https://does-not-work.perfume.new",
-        "priority": 1
-      },
-      {
-        "url": "https://gitlab.com",
-        "priority": 4
-      },
-      {
-        "url": "http://app.scnt.me",
-        "priority": 3
-      },
-      {
-        "url": "https://offline.scentronix.com",
-        "priority": 2
-      }
-    ]
-  )
-})()
+export {findServer, TInputUrl}
 
-exports.findServer = findServer
 
 
 

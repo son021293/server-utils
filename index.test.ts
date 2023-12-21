@@ -1,4 +1,4 @@
-import {findServer, TInputUrl} from "./index";
+import {findServer, TInputUrl} from './index';
 import {describe, expect, it} from '@jest/globals';
 import fetch from "jest-fetch-mock";
 
@@ -46,7 +46,7 @@ describe("Find lowest priority server", () => {
       },
     ];
     fetch.mockResponse(() => Promise.reject());
-    await findServer(data).catch(e => expect(e).toEqual("No available server"))
+    await findServer(data).catch((e: string) => expect(e).toEqual("No available server"))
   })
 })
 
