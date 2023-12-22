@@ -3,6 +3,7 @@
   "exclude": ["**/*.test.ts", "**/*.config.ts"],
   "compilerOptions": {
     "module": "CommonJS",
-    "outDir": "./lib/cjs"
+    "outDir": "./lib",
+    "declaration": true
   },
 }
