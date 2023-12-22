@@ -4,6 +4,8 @@ module.exports = {
   testEnvironment: 'node',
   "automock": false,
   "setupFiles": [
-    "./setupJest.ts"
-  ]
+    "./setupJest.config.ts"
+  ],
+  "testPathIgnorePatterns": ["lib"],
+  "testMatch": ["**/?(*.)+(spec|test).ts"],
 };
