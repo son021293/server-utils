@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["**/*.test.ts", "**/*.config.ts"],
+  "exclude": ["**/*.test.ts", "**/*.config.ts", "./lib/**/*"],
   "compilerOptions": {
     "module": "CommonJS",
     "outDir": "./lib",

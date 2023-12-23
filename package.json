@@ -1,6 +1,6 @@
 {
   "name": "find-server-utils",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Find server with lowest priority",
   "main": "./lib/index.js",
   "files": [
